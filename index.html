@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sillog</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1 id='page_title'>Sillog.Profile</h1>
+        <hr style="margin: 20px 20px 0px;">
+        <hr style="margin: 3px 20px 20px;">        
+    </header>
+    <div id='outer'>
+        <div id='profile'>
+            <img src="./img/default.png" width="110px">
+            <div class='info' id='nickname'>Nickname</div>
+            <div class='info' id="univ">숙명여자대학교</div>
+            <div class='info' id='major'>IT공학전공</div>
+            <div class='info' id='mbti'>ISFP</div>
+
+            <button id="requestBtn">내 증명서 불러오기</button>
+            <button id="confirmBtn">인증완료</button>
+
+            <hr style="margin: 50px 20px 0px; background-color: black;">
+            <hr style="margin: 3px 20px 50px;">
+            <div class="cert hidden">
+                <div class="section">
+                    <div class='section_title'>Careers</div>
+                    <div class='careers'>
+                        <div class='my_career'>
+                            <div id='career_icon'>🏆</div>
+                            <div id='career_title'>상 이름</div>
+                            <div id='career_org'>주최기관</div>
+                        </div>
+                    </div>
+                    <div class='careers'>
+                        <div class='my_career'>
+                            <div id='career_icon'>🏆</div>
+                            <div id='career_title'>2021 세계 최고 멋진 상</div>
+                            <div id='career_org'>과기정통부</div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr style="margin: 20px;">
+                <div class="section">
+                    <div class="section_title">Projects</div>
+                    <div id='projects'>
+                        <div class='my_project'>
+                            <div id='career_icon'>📌</div>
+                            <div id='career_title'>프로젝트 이름</div>
+                            <div class='small'>진행 기간</div>
+                        </div>
+                    </div>
+                    <div id='projects'>
+                        <div class='my_project'>
+                            <div id='career_icon'>📌</div>
+                            <div id='career_title'>실록:자격증명</div>
+                            <div class="small">22.01.01-22.02.20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script type='module' src="./index.js"></script>
+    <script src="./lib/klipSDK-2.0.0.min.js"></script>
+</body>
+</html>
