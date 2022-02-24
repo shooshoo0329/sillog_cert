@@ -47,7 +47,7 @@ const authResult = async () => {
     cert.classList.remove("hidden")
     nickname.textContent = `JungHyun`
   } else {
-    textArea.textContent = "noo"
+    alert('본인 인증에 실패하였습니다.')
   }
 }
 
