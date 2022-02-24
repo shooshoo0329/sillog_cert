@@ -31,6 +31,7 @@ hr {
 #profile {
     margin-top: 150px;
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 375px;
     text-align: center;
 
@@ -127,4 +128,8 @@ button {
     font-size: 10px;
     width: 100px;
     text-align: right;
+}
+
+.remove {
+    display: none;
 }

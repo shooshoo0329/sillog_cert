@@ -2,8 +2,8 @@ const { prepare, request, getResult, getCardList } = klipSDK
 
 // HTML ELEMENTS
 const textArea = document.querySelector('.text-area')
-const rqbtn = document.querySelector('#requestBtn')
-const cfbtn = document.querySelector('#confirmBtn')
+const rqbtn = document.querySelector('.requestBtn')
+const cfbtn = document.querySelector('.confirmBtn')
 const cert = document.querySelector('.cert')
 const bappName = `Sillog`
 const myaddr = `"0x6e8af0F8E64a0f6a8B0610874b32fd7f3ac6Df18"`
@@ -54,8 +54,11 @@ execute(authPrepare)
 rqbtn.addEventListener('click', (e) => {
   //textArea.textContent = bappName;
   request(requestKey, () => alert('not mobile'))
+  rqbtn.classList.add('remove')
+  cfbtn.classList.remove('remove')
 })
 
 cfbtn.addEventListener('click', (e) => {
   authResult()
+
 })
