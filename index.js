@@ -5,6 +5,7 @@ const textArea = document.querySelector('.text-area')
 const rqbtn = document.querySelector('.requestBtn')
 const cfbtn = document.querySelector('.confirmBtn')
 const cert = document.querySelector('.cert')
+const nickname = document.querySelector('nickname')
 const bappName = `Sillog`
 const myaddr = `"0x6e8af0F8E64a0f6a8B0610874b32fd7f3ac6Df18"`
 
@@ -44,6 +45,7 @@ const authResult = async () => {
   //textArea.textContent = typeof(myaddr)
   if (address == myaddr) {
     cert.classList.remove("hidden")
+    nickname.textContent = `JungHyun`
   } else {
     textArea.textContent = "noo"
   }
